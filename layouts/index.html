@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+<section id="main">
+  <section class="header">
+      <img src="{{ .Site.Params.avatar }}" alt="" class="avatar">
+      <div class="name">{{ .Site.Title }}</div>
+      <div class="description">{{ .Site.Params.description }}</div>
+      <nav>
+          {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+      </nav>
+  </section>
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "in" "post") }}
+  <section class="posts">
+    <ul class=posts_listing>
+      {{ range .Paginator.Pages }}
+        <a class="post" href="{{ .Permalink }}">{{ .Title }}
+          <span>{{ .Date.Format (.Site.Params.dateform | default "January 02, 2006") }}</span>
+        </a>
+      {{ end }}
+    </ul>
+  </section>
+{{ partial "paginator.html" . }}
+</section>
+{{ partial "footer.html" . }}

@@ -1,0 +1,15 @@
+name = "cat"
+license = "MIT License"
+licenselink = "https://github.com/hoofs/Cat/blob/master/LICENSE"
+description = "A simple but not crude blog theme for hugo."
+homepage = "https://github.com/hoofs/Cat"
+tags = []
+features = []
+
+[author]
+  name = "hoofs"
+  homepage = "https://poems.gq"
+
+[original]
+  name = "Cat"
+  homepage = "https://github.com/Kilerd/Cat"
