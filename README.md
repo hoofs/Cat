@@ -2,7 +2,7 @@
 ![cat]()
 ## Cat
 Cat is a simple but not crude blog theme for hugo. [Demo](https://poems.gq)
-> It's port of the Kilerd/Cat, and I make some changes.
+> It's port of the [Kilerd/Cat](https://github.com/Kilerd/Cat), and I make some changes.
 
 ## Usage
 
@@ -17,3 +17,5 @@ Cat is a simple but not crude blog theme for hugo. [Demo](https://poems.gq)
 -
 
 ## Thanks
+- [Mirror](https://github.com/LoeiFy/Mirror)
+- [Kilerd/Cat](https://github.com/Kilerd/Cat)
